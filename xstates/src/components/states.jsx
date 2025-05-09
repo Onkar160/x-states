@@ -104,9 +104,7 @@ export default function States() {
           onChange={handleChange}
           defaultValue=""
         >
-          <option value="">
-            Select Country
-          </option>
+          <option value="">Select Country</option>
           {countries.map((item, ind) => {
             return (
               <option value={item} key={`${ind}_${item}`}>
@@ -122,9 +120,7 @@ export default function States() {
           disabled={!selectedCountry}
           defaultValue=""
         >
-          <option value="">
-            Select State
-          </option>
+          <option value="">Select State</option>
           {states.map((item, ind) => {
             return (
               <option value={item} key={`${ind}_${item}`}>
@@ -140,9 +136,7 @@ export default function States() {
           disabled={!selectedState}
           defaultValue=""
         >
-          <option value="">
-            Select City
-          </option>
+          <option value="">Select City</option>
           {cities.map((item, ind) => {
             return (
               <option value={item} key={`${ind}_${item}`}>
@@ -154,13 +148,12 @@ export default function States() {
       </div>
       {selectedCity && (
         <div style={{ display: "flex", alignItems: "flex-end", gap: "8px" }}>
-          <h3 style={{ marginBottom: "0" }}>You selected </h3>
-          <p style={{ fontSize: "25px", marginBottom: "0", fontWeight: "700" }}>
-            {selectedCity},
-          </p>
-          <h3 style={{ color: "grey", marginBottom: "0" }}>{selectedState},</h3>
-          <h3 style={{ color: "grey", marginBottom: "0" }}>
-            {selectedCountry}
+          <h3>
+            You selected{" "}
+            <span style={{ fontSize: "25px" }}>{selectedCity}</span>,{" "}
+            <span style={{ color: "grey" }}>
+              {selectedState}, {selectedCountry}
+            </span>{" "}
           </h3>
         </div>
       )}
