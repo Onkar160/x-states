@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import States from "./components/states";
+
 
 
 function App() {
 
   return (
     <>
-      
+      <States />
     </>
   )
 }
