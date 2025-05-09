@@ -158,7 +158,7 @@ export default function States() {
           <p style={{ fontSize: "25px", marginBottom: "0", fontWeight: "700" }}>
             {selectedCity},
           </p>
-          <h3 style={{ color: "grey", marginBottom: "0" }}>{selectedState}</h3>
+          <h3 style={{ color: "grey", marginBottom: "0" }}>{selectedState},</h3>
           <h3 style={{ color: "grey", marginBottom: "0" }}>
             {selectedCountry}
           </h3>
